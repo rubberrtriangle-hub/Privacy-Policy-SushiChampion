@@ -64,7 +64,7 @@
 <body>
   <div class="container">
     <h1>🍣 Política de Privacidad – SushiChampion</h1>
-    <p class="updated">Última actualización: 12/06/2026</p>
+    <p class="updated">Última actualización: 14/09/2026</p>
 
     <p>Esta Política de Privacidad describe cómo <strong>SushiChampion</strong> ("la aplicación", "nosotros") recopila, usa y comparte información cuando utilizas la aplicación.</p>
 
@@ -76,9 +76,14 @@
       <li>Tu sushi favorito (opcional).</li>
       <li>Contador de sushis consumidos y estadísticas de la sesión (velocidad, duración, tipos de sushi).</li>
     </ul>
-    <p>Esta información se almacena en nuestra base de datos (Firebase Firestore) para permitir las funciones de mesa compartida, ranking global y guardado de récords. <strong>No recopilamos correos electrónicos, números de teléfono ni ninguna información que identifique de forma directa tu identidad real</strong>, ya que el nombre introducido es elegido libremente por el usuario.</p>
+    <p>Esta información se almacena en nuestra base de datos (Firebase Firestore) para permitir las funciones de mesa compartida, ranking global y guardado de récords. El nombre introducido es elegido libremente por el usuario y no tiene por qué corresponder a tu identidad real.</p>
 
-    <p><strong>b) Información recopilada automáticamente</strong></p>
+    <p><strong>b) Cuenta de Google (opcional, solo para mayores de 13 años)</strong></p>
+    <p>SushiChampion ofrece la opción de iniciar sesión con tu cuenta de Google para sincronizar tu progreso (logros, cartas, temas y fondos desbloqueados, experiencia y puntuaciones) entre varios dispositivos. Esta función es completamente opcional: la aplicación funciona con normalidad sin ella, guardando todo el progreso únicamente en tu dispositivo.</p>
+    <p>Antes de poder activar esta opción, se muestra una pantalla neutral que pregunta el año de nacimiento. Si indicas tener menos de 13 años, la opción de iniciar sesión con Google no se activa en ningún caso, y no se recopila ni almacena ningún identificador de tu cuenta de Google. Más detalles en la sección 5.</p>
+    <p>Si decides iniciar sesión, se recopila tu identificador de cuenta de Google (UID) y, según la configuración de tu cuenta, tu dirección de correo electrónico, con el único fin de asociar tu progreso de juego a esa cuenta. Estos datos se almacenan en Firebase Authentication y Firebase Firestore.</p>
+
+    <p><strong>c) Información recopilada automáticamente</strong></p>
     <p>A través de <strong>Google AdMob</strong> (para mostrar anuncios) y <strong>Firebase</strong>, pueden recopilarse automáticamente:</p>
     <ul>
       <li>Identificadores de dispositivo y publicidad (Advertising ID).</li>
@@ -90,6 +95,7 @@
     <h2>2. Cómo usamos la información</h2>
     <ul>
       <li>Para ofrecer las funciones principales de la app: contador de sushis, mesas compartidas en tiempo real, rankings globales y locales, y logros.</li>
+      <li>Para sincronizar tu progreso de juego entre dispositivos, si decides iniciar sesión con tu cuenta de Google.</li>
       <li>Para mostrar anuncios a través de Google AdMob.</li>
       <li>Para mejorar el rendimiento y estabilidad de la aplicación mediante Firebase.</li>
     </ul>
@@ -98,27 +104,35 @@
     <p>Utilizamos los siguientes servicios de terceros, que pueden recopilar información según sus propias políticas de privacidad:</p>
     <ul>
       <li><strong>Google AdMob</strong> (<a href="https://policies.google.com/privacy" target="_blank">Política de privacidad de Google</a>) – para mostrar anuncios.</li>
-      <li><strong>Google Firebase / Firestore</strong> (<a href="https://policies.google.com/privacy" target="_blank">Política de privacidad de Google</a>) – para almacenamiento de datos y funcionamiento de mesas/rankings.</li>
+      <li><strong>Google Firebase / Firestore</strong> (<a href="https://policies.google.com/privacy" target="_blank">Política de privacidad de Google</a>) – para almacenamiento de datos y funcionamiento de mesas/rankings/sincronización de progreso.</li>
+      <li><strong>Inicio de sesión de Google</strong> (<a href="https://policies.google.com/privacy" target="_blank">Política de privacidad de Google</a>) – únicamente si decides vincular tu cuenta para sincronizar tu progreso.</li>
     </ul>
     <p>Estos servicios pueden usar identificadores de publicidad para personalizar anuncios. Puedes gestionar tus preferencias de anuncios personalizados desde la configuración de tu dispositivo Android (Ajustes &gt; Google &gt; Anuncios).</p>
 
     <h2>4. Datos almacenados localmente</h2>
-    <p>La aplicación guarda en el dispositivo (almacenamiento local/SharedPreferences):</p>
+    <p>La aplicación guarda en el dispositivo (almacenamiento local cifrado):</p>
     <ul>
       <li>Tu historial personal de partidas.</li>
-      <li>Logros desbloqueados.</li>
-      <li>Preferencias de tema visual.</li>
+      <li>Logros, cartas, temas y fondos desbloqueados.</li>
+      <li>Experiencia (XP) y preferencias de tema visual.</li>
     </ul>
-    <p>Estos datos permanecen en tu dispositivo y no se comparten salvo que decidas enviarlos al ranking global (lo cual ocurre automáticamente al finalizar una sesión con sushis registrados).</p>
+    <p>Estos datos permanecen en tu dispositivo y no se comparten salvo que: (a) decidas enviarlos al ranking global, lo cual ocurre automáticamente al finalizar una sesión con sushis registrados, o (b) inicies sesión con tu cuenta de Google, en cuyo caso también se guarda una copia en la nube para poder sincronizarlos entre dispositivos.</p>
 
-    <h2>5. Datos de menores</h2>
-    <p>La aplicación no está dirigida específicamente a niños menores de 13 años y no recopilamos intencionadamente información personal identificable de menores.</p>
+    <h2>5. Datos de menores y pantalla de edad</h2>
+    <p>SushiChampion está dirigida a un público mixto que incluye tanto a niños (a partir de 9 años) como a adolescentes y adultos. Por ello, antes de activar cualquier función que implique vincular una cuenta de Google, la aplicación muestra una pantalla neutral en la que se pregunta el año de nacimiento, sin sugerir ninguna respuesta concreta.</p>
+    <ul>
+      <li>Si el usuario indica tener menos de 13 años, la opción de iniciar sesión con Google no se ofrece en ningún momento, y no se recopila ni almacena ningún identificador de cuenta de Google. El progreso de estos usuarios se guarda exclusivamente en el dispositivo.</li>
+      <li>Solo los usuarios que indican tener 13 años o más pueden optar por iniciar sesión con Google para sincronizar su progreso, según se describe en la sección 1b.</li>
+    </ul>
+    <p>No recopilamos intencionadamente ninguna otra información personal identificable de menores de 13 años.</p>
 
     <h2>6. Seguridad</h2>
-    <p>Tomamos medidas razonables para proteger la información almacenada, pero ningún sistema es 100% seguro. El uso de la app implica la aceptación de este riesgo inherente.</p>
+    <p>Tomamos medidas razonables para proteger la información almacenada, incluyendo cifrado en tránsito para todos los datos enviados a nuestros servidores. Ningún sistema es 100% seguro, y el uso de la app implica la aceptación de este riesgo inherente.</p>
 
     <h2>7. Eliminación de datos</h2>
     <p>Puedes eliminar tu historial personal y registros de ranking global directamente desde la sección "Historial" de la app, donde cada entrada se puede borrar de forma individual (incluyendo su copia en el ranking global, si existe).</p>
+    <p>Si has iniciado sesión con tu cuenta de Google, puedes eliminar tu cuenta y todo tu progreso sincronizado (logros, cartas, temas y fondos desbloqueados, XP y puntuaciones, tanto en el dispositivo como en la nube) en cualquier momento desde <strong>Perfil → "Eliminar mi progreso y cuenta"</strong>, dentro de la propia aplicación.</p>
+    <p>Si no puedes acceder a la aplicación, también puedes solicitar la eliminación de tu cuenta y datos a través de esta página: <a href="https://rubberrtriangle-hub.github.io/removedata/" target="_blank">Eliminar mi cuenta y mis datos</a>, o escribiendo a <a href="mailto:rubberrtriangle@gmail.com">rubberrtriangle@gmail.com</a>. Atenderemos estas solicitudes en un plazo máximo de 30 días.</p>
 
     <h2>8. Cambios en esta política</h2>
     <p>Podemos actualizar esta Política de Privacidad ocasionalmente. Te recomendamos revisarla periódicamente. La fecha de "Última actualización" indicará la versión vigente.</p>
